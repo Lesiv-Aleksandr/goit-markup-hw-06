@@ -791,6 +791,7 @@ img{
       height: 581px;
       left: 50%;
       top: 50%;
+      padding: 40px;
       transform: translate(-50%, -50%);
 
       background: #FFFFFF;
