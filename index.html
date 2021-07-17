@@ -531,10 +531,10 @@
                     <form class="modal-form">
 
                         <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
-                        <label class="modal-form-field" name="user-name">
+                        <label class="modal-form-field" >
                             Имя  
                             <span class="modal-form-container">
-                                <input type="text" class="modal-form-input">
+                                <input type="text" class="modal-form-input"  name="user-name" required minlength="2" required pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Введите имя кирилицей или латинскими символами ">
                                 <svg class="modal-form-icon" width="12" height="12">
                                     <use href="./images/sprite.svg#person-form"></use>                                    
                                 </svg>
@@ -544,7 +544,7 @@
                         <label class="modal-form-field" >
                             Телефон
                             <span class="modal-form-container">
-                                <input type="tel" class="modal-form-input" name="user-tel">
+                                <input type="tel" class="modal-form-input" name="user-tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="095-000-00-00">
                                 <svg class="modal-form-icon" width="13" height="13">
                                     <use href="./images/sprite.svg#tel-form"></use>                                    
                                 </svg>
@@ -554,7 +554,7 @@
                         <label class="modal-form-field" >
                             Почта
                             <span class="modal-form-container">
-                                <input type="email" name="user-email" class="modal-form-input">
+                                <input type="email" name="user-email" class="modal-form-input" required>
                                 <svg class="modal-form-icon" width="15" height="12">
                                     <use href="./images/sprite.svg#email-form"></use>                                    
                                 </svg>
@@ -565,11 +565,14 @@
                             Комментарий
                             <textarea name="user-massege" class="modal-form-massege" placeholder="Введите текст"></textarea>
                         </label>
+
                         
-                        <input type="checkbox" class="modal-form-checkbox" id="accept-policy"></imput>
-                        <label for="accept-policy" class="modal-form-checkbox-label">
-                            Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form-label-link">Условия договора</a> 
+                            <input type="checkbox" class="modal-form-checkbox" id="accept-policy"></imput> 
+                        <label for="accept-policy" class="modal-form-checkbox-label"> 
+                                        
+                            Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form-label-link"> Условия договора</a> 
                         </label>
+
                         <button type="submit" class="modal-form-button">
                             Отправить
                         </button>
