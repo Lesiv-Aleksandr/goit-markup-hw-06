@@ -924,7 +924,7 @@ img{
 .modal-form-checkbox:checked + 
 .modal-form-checkbox-label::before{
       /* background-color: var(--akcent-color); */
-      background-image: url(../images/chek-icon.svg);
+      background-image: url(./images/icon-cheсk.svg);
       
 
 }
