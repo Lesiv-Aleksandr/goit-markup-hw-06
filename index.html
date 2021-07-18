@@ -76,7 +76,7 @@
                 </section>
             <!--List of benefits -->
             <section class="section">
-                <h2 class="visualli-hidden">Преимущество</h2>
+                <h2 class="visually-hidden">Преимущество</h2>
                 <div class="container">
                     <ul class="list advantage">
                         <li class="advantage-box">
@@ -511,6 +511,24 @@
                         </li>
                     </ul>
                 </div>
+                <div class="footer-form">
+                    <h3 class="title-footer-form">Подпишитесь на рассылку</h3>
+                    <form class="footer-form-box">
+                        <label class="subscribe-email-label">
+                            <input type="email" name="subscribe-email" class="subscribe-email-input" required placeholder="E-mail" >
+                        </label>
+                        <button type="submit" class="button-subscribe">
+                            Подписаться
+                            <svg class="icon-send" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-send">
+                        
+                                </use>
+                            </svg>
+                        </button>
+                    </form>
+
+
+                </div>
                 
                 
             </div>
@@ -534,7 +552,7 @@
                         <label class="modal-form-field" >
                             Имя  
                             <span class="modal-form-container">
-                                <input type="text" class="modal-form-input"  name="user-name" required minlength="2" required pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Введите имя кирилицей или латинскими символами ">
+                                <input type="text" class="modal-form-input"  name="user-name" required minlength="2"  pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Введите имя кирилицей или латинскими символами ">
                                 <svg class="modal-form-icon" width="12" height="12">
                                     <use href="./images/sprite.svg#person-form"></use>                                    
                                 </svg>
@@ -556,7 +574,7 @@
                             <span class="modal-form-container">
                                 <input type="email" name="user-email" class="modal-form-input" required>
                                 <svg class="modal-form-icon" width="15" height="12">
-                                    <use href="./images/icon-cheсk.svg"></use>                                    
+                                    <use href="./images/sprite.svg#email-form"></use>                                    
                                 </svg>
                             </span>                            
                         </label>
@@ -567,10 +585,10 @@
                         </label>
 
                         
-                            <input type="checkbox" class="modal-form-checkbox" id="accept-policy"></imput> 
-                        <label for="accept-policy" class="modal-form-checkbox-label"> 
+                            <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
+                        <label for="accept-policy" class="modal-form-checkbox-label">
                                         
-                            Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form-label-link"> Условия договора</a> 
+                            Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="modal-form-label-link"> Условия договора</a> 
                         </label>
 
                         <button type="submit" class="modal-form-button">
